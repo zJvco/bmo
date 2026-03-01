@@ -1,0 +1,16 @@
+# ============================================================
+# Project Config — read by all skills
+# Place this file at: ./bmo/config.yaml
+# ============================================================
+
+# --- Project Identity ---
+project_name: "bmo"           # Human-readable project name
+
+# --- Output ---
+output_folder: "./_output"            # Where all skill outputs are saved
+                                     # Use relative paths from project root
+
+# --- Language ---
+communication_language: "English"    # Language Claude, Codex, Cursor... speaks TO you in
+document_output_language: "English"  # Language used INSIDE generated documents
+                                     # (can differ, e.g. speak EN, write PT-BR)
