@@ -39,6 +39,8 @@ Look for an existing file at `output_file`.
 
 ### 1.2 Scan Project Files
 
+> ⚠️ **Always exclude `.bmo/`** — this directory contains the bmo framework installation and is not part of the project. Ignore it entirely when scanning.
+
 Read and analyze available project files to understand the technology stack and conventions. Look for:
 
 **Architecture & planning:**
