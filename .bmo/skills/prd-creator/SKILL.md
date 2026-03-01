@@ -31,7 +31,7 @@ Before anything else:
 1. Receive a feature description from the user
 2. Ask 3–5 essential clarifying questions (with lettered options)
 3. Generate a structured PRD based on answers
-4. Save to `{output_folder}/prd/prd-{feature-name}-{YYYY-MM-DD}.md`
+4. Save to `{output_folder}/prd/proposal.md`
 
 **Important:** Do NOT start implementing. Just create the PRD.
 
@@ -152,9 +152,9 @@ The PRD reader may be a junior developer or AI agent. Therefore:
 
 - **Format:** Markdown (`.md`)
 - **Location:** `{output_folder}/prd/`
-- **Filename:** `prd-{feature-name}-{YYYY-MM-DD}.md` (kebab-case, today's date)
+- **Filename:** `proposal.md`
 
-Example: `./_output/prd/prd-task-priority-system-2025-03-14.md`
+Example: `./_output/prd/proposal.md`
 
 ---
 
@@ -257,4 +257,4 @@ Before saving the PRD:
 - [ ] User stories are small and specific
 - [ ] Functional requirements are numbered and unambiguous
 - [ ] Non-goals section defines clear boundaries
-- [ ] Saved to `{output_folder}/prd/prd-{feature-name}-{YYYY-MM-DD}.md`
+- [ ] Saved to `{output_folder}/prd/proposal.md`

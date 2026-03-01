@@ -102,9 +102,10 @@ my-project/
 │   └── _output/
 │       ├── project-context.md  # Shared agent memory for this project
 │       ├── prd/
-│       │   ├── prd.json        # Current active PRD
-│       │   ├── progress.txt    # Loop learning log
-│       │   └── archive/        # Past PRDs and progress logs
+│       │   ├── proposal.md          # Current active PRD
+│       │   ├── progress.txt         # Loop learning log
+|       |   ├── tasks.json           # PRD converted to small tasks
+│       │   └── archive/             # Past PRDs and progress logs
 ```
 
 Keep one `.bmo/` per project. Don't share between repos.

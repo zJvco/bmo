@@ -40,7 +40,7 @@ BMO_DIR="$(dirname "$SCRIPT_DIR")"                          # .bmo/
 PROJECT_ROOT="$(dirname "$BMO_DIR")"                        # project root
 
 PRD_DIR="$BMO_DIR/_output/prd"
-PRD_FILE="$PRD_DIR/prd.json"
+PRD_FILE="$PRD_DIR/tasks.json"
 PROGRESS_FILE="$PRD_DIR/progress.txt"
 PROJECT_CONTEXT_FILE="$BMO_DIR/_output/project-context.md"
 INSTRUCTIONS_FILE="$BMO_DIR/references/instructions.md"

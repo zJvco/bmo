@@ -1,11 +1,11 @@
 ---
 name: prd-converter
-description: "Convert PRDs to prd.json format for the BMO autonomous agent system. Use when you have an existing PRD and need to convert it to BMO's JSON format. Triggers on: convert this prd, turn this into BMO format, create prd.json from this, BMO json."
+description: "Convert PRDs to tasks.json format for the BMO autonomous agent system. Use when you have an existing PRD and need to convert it to BMO's JSON format. Triggers on: convert this prd, turn this into BMO format, create tasks.json from this, BMO json."
 ---
 
 # PRD Converter
 
-Converts existing PRDs to the prd.json format that BMO uses for autonomous execution.
+Converts existing PRDs to the tasks.json format that BMO uses for autonomous execution.
 
 ---
 
@@ -21,7 +21,7 @@ Before anything else:
 
 ## The Job
 
-Take a PRD (markdown file or text) and convert it to `prd.json` in your BMO directory on `{output_folder}/prd/prd.json`.
+Take a PRD (markdown file or text) and convert it to `tasks.json` in your BMO directory on `{output_folder}/prd/tasks.json`.
 
 ---
 
@@ -170,7 +170,7 @@ Add ability to mark tasks with different statuses.
 - Persist status in database
 ```
 
-**Output prd.json:**
+**Output tasks.json:**
 ```json
 {
   "project": "TaskApp",
@@ -241,24 +241,24 @@ Add ability to mark tasks with different statuses.
 
 ## Archiving Previous Runs
 
-**Before writing a new prd.json, check if there is an existing one from a different feature:**
+**Before writing a new tasks.json, check if there is an existing one from a different feature:**
 
-1. Read the current `{output_folder}/prd/prd.json` if it exists
+1. Read the current `{output_folder}/prd/tasks.json` if it exists
 2. Check if `branchName` differs from the new feature's branch name
 3. If different AND `{output_folder}/prd/progress.txt` has content beyond the header:
    - Create archive folder: `{output_folder}/prd/archive/YYYY-MM-DD-feature-name/`
-   - Copy current `prd.json` and `progress.txt` to archive
+   - Copy current `tasks.json` and `progress.txt` to archive
    - Reset `progress.txt` with fresh header
 
-**The bmo.sh script handles this automatically** when you run it, but if you are manually updating prd.json between runs, archive first.
+**The bmo.sh script handles this automatically** when you run it, but if you are manually updating tasks.json between runs, archive first.
 
 ---
 
 ## Checklist Before Saving
 
-Before writing prd.json, verify:
+Before writing tasks.json, verify:
 
-- [ ] **Previous run archived** (if prd.json exists with different branchName, archive it first)
+- [ ] **Previous run archived** (if tasks.json exists with different branchName, archive it first)
 - [ ] Each story is completable in one iteration (small enough)
 - [ ] Stories are ordered by dependency (schema to backend to UI)
 - [ ] Every story has "Typecheck passes" as criterion
