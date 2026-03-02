@@ -4,10 +4,10 @@
 # ============================================================
 
 # --- Project Identity ---
-project_name: "bmo"           # Human-readable project name
+project_name: "MyProject"           # Human-readable project name
 
 # --- Output ---
-output_folder: "./_output"            # Where all skill outputs are saved
+output_folder: ".bmo/_output"        # Where all skill outputs are saved
                                      # Use relative paths from project root
 
 # --- Language ---

@@ -19,9 +19,9 @@ Before anything else:
    - **If found**, extract: `project_name`, `output_folder`, `communication_language`, `document_output_language`.
      Speak to the user in `communication_language`. Write all document content in `document_output_language`.
 
-2. Read `./_output/project-context.md`.
+2. Read `{output_folder}/project-context.md`.
    - **If missing**: warn and continue:
-     > "⚠️ Project context file not found at `./_output/project-context.md`. Continuing without it — consider creating it for better results."
+     > "⚠️ Project context file not found at `{output_folder}/project-context.md`. Continuing without it — consider creating it for better results."
    - **If found**: read it fully. Use it to ground the PRD in the project's goals, stack, and constraints.
 
 ---
@@ -154,7 +154,7 @@ The PRD reader may be a junior developer or AI agent. Therefore:
 - **Location:** `{output_folder}/prd/`
 - **Filename:** `proposal.md`
 
-Example: `./_output/prd/proposal.md`
+Example: `.bmo/_output/prd/proposal.md`
 
 ---
 

@@ -28,14 +28,14 @@ Use this pattern for all skill output files:
 {output_folder}/{skill-name}/{topic-slug}-{YYYY-MM-DD}.md
 ```
 
-Example: `./_output/research/ev-europe-2025-03-14.md`
+Example: `.bmo/_output/research/ev-europe-2025-03-14.md`
 
 ## Project Context
 
-After loading the config, read `./_output/project-context.md` to understand the project's background, goals, and any relevant details that should inform the skill's output.
+After loading the config, read `{output_folder}/project-context.md` to understand the project's background, goals, and any relevant details that should inform the skill's output.
 
 - **If the file is missing**: warn the user and continue.
-  > "⚠️ Project context file not found at `./_output/project-context.md`. Continuing without it — consider creating it for better results."
+  > "⚠️ Project context file not found at `{output_folder}/project-context.md`. Continuing without it — consider creating it for better results."
 - **If found**: read it fully before proceeding. Use it to personalize and ground all outputs.
 
 ## Language Behavior

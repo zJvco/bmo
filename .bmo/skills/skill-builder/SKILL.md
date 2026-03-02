@@ -22,9 +22,9 @@ Before anything else:
      - `communication_language` → speak to the user in this language from now on
      - `document_output_language` → write all skill file content in this language
 
-2. Read `./_output/project-context.md`.
+2. Read `.bmo/_output/project-context.md`.
    - **If missing**: warn and continue:
-     > "⚠️ Project context file not found at `./_output/project-context.md`. Continuing without it — consider creating it for better results."
+     > "⚠️ Project context file not found at `.bmo/_output/project-context.md`. Continuing without it — consider creating it for better results."
    - **If found**: read it fully before proceeding.
 
 ---
@@ -102,9 +102,9 @@ Before anything else:
    - **If found**, extract: `project_name`, `output_folder`, `communication_language`, `document_output_language`.
      Speak to the user in `communication_language`. Write all document content in `document_output_language`.
 
-2. Read `./_output/project-context.md`.
+2. Read `.bmo/_output/project-context.md`.
    - **If missing**: warn and continue:
-     > "⚠️ Project context file not found at `./_output/project-context.md`. Continuing without it — consider creating it for better results."
+     > "⚠️ Project context file not found at `.bmo/_output/project-context.md`. Continuing without it — consider creating it for better results."
    - **If found**: read it fully. Use it to ground and personalize all outputs.
 ```
 
@@ -115,7 +115,7 @@ All skill output files must follow:
 {output_folder}/{skill-name}/{topic-slug}-{YYYY-MM-DD}.md
 ```
 
-Example: `./_output/research/ev-europe-2025-03-14.md`
+Example: `.bmo/_output/research/ev-europe-2025-03-14.md`
 
 #### Skill Body
 
@@ -211,7 +211,7 @@ Confirm to the user:
 ## Conventions Reference
 
 For full details on config loading and output naming, see:
-`./references/config-convention.md`
+`.bmo/references/config-convention.md`
 
 ---
 
@@ -221,7 +221,7 @@ Before finishing, verify every skill (new or edited) has:
 
 - [ ] YAML frontmatter with `name` and `description`
 - [ ] Config loading block at the top (Step 0) — reads `.bmo/config.yaml`
-- [ ] Project context loading — reads `./_output/project-context.md` (warn if missing)
+- [ ] Project context loading — reads `.bmo/_output/project-context.md` (warn if missing)
 - [ ] Output file naming pattern: `{output_folder}/{skill-name}/{topic-slug}-{YYYY-MM-DD}.md`
 - [ ] Language behavior (communicate in `communication_language`, write docs in `document_output_language`)
 - [ ] Clear, numbered workflow steps
